@@ -9,7 +9,7 @@ import lombok.Getter;
 
 
 @Getter
-public class Order {
+public final class Order {
 
   private final User user;
   private final List<Product> products;

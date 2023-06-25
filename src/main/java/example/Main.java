@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-
 public class Main {
   public static void main(String[] args) {
 
@@ -108,7 +107,6 @@ public class Main {
   }
 
   private static Map<Product, List<User>> getProductUserMap(List<Order> orders) {
-
     return Product.getProductUserMap(orders);
   }
 

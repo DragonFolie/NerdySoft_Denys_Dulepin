@@ -10,17 +10,13 @@ import java.util.List;
 import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
-
-
 
 @Getter
-@Setter
 @AllArgsConstructor
 public class Product {
 
-  private String name;
-  private double price;
+  private final String name;
+  private final double price;
 
 
   public static List<Product> sortProductsByPrice(List<Product> products) {

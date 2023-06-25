@@ -7,7 +7,6 @@ import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 
-
 @Setter
 @Getter
 public class User {
@@ -22,6 +21,7 @@ public class User {
     return user;
   }
 
+
   public static double calculateAverageAge(Product product, List<Order> orders) {
     List<Integer> listOfAge = new ArrayList<>();
     for (Order order : orders) {
@@ -31,6 +31,7 @@ public class User {
     }
     return listOfAge.stream().mapToInt(val -> val).average().orElse(0.0);
   }
+
 
   public static List<Order> sortOrdersByUserAgeDesc(List<Order> orders) {
     List<Order> sortedListOfOrders = new ArrayList<>(orders);

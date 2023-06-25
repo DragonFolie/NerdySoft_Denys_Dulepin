@@ -3,10 +3,10 @@ package example.util;
 import java.util.HashSet;
 import java.util.Set;
 
-public class SingletonClass {
-
+public final class SingletonClass {
   private static SingletonClass instance;
   private Set<String> usedCodes;
+
 
   private SingletonClass() {
     usedCodes = new HashSet<>();
